@@ -73,7 +73,7 @@
               <p class="published">Published <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
             </section>
           </div>
-          {{post}}
+          {{/post}}
           <div class="isRight">
             <h5 class="index-headline featured"><span>Supported by</span></h5>
             <footer class="site-footer">
@@ -86,7 +86,7 @@
             </footer>
           </div>
         </div>
-        {%if site.disqus %}
+        <!-- {%if site.disqus %}
         <div id="disqus_thread"></div>
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -100,7 +100,7 @@
             })();
         </script>
         <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        {% endif %}
+        {% endif %} -->
       </article>
     </main>
     <div class="bottom-closer">
