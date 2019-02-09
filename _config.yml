@@ -10,6 +10,8 @@ title: "Casually Cam"
 description: > # this means to ignore newlines until "email:"
   Pudgy Girl in a Pudgy World
 
+source:
+
 email: camille_p@verizon.net
 #blog logo
 logo: "/assets/images/df_logo.jpg"
