@@ -1,43 +1,92 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-
 # Build settings
-markdown: kramdown
-theme: minima
+#markdown: redcarpet
+#highlighter: pygments
 plugins:
-  - jekyll-feed
+  - jemoji
+  - picture_tag
+  
+# Site settings
+title: "Casually Cam"
+description: > # this means to ignore newlines until "email:"
+  Pudgy Girl in a Pudgy World
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+email: camille_p@verizon.net
+#blog logo
+logo: "/assets/images/df_logo.jpg"
+# blog cover
+cover: "/assets/images/background_image.jpg"
+
+name: 'Camille Premo'
+author: 'Camille Premo'
+author_image: "/assets/images/author.jpg"
+
+paginate:	5
+
+url: "http://blog.base68.com" # the base hostname & protocol for your site
+baseurl: ""
+#used to display twitter cards
+twitter_handle: '@dirkfabisch'
+
+#fill in disqus shortname to use disqus
+#disqus: disqus-shortname
+
+# social icons and sharing options
+social:
+  - icon:	twitter
+    url:	https://twitter.com/premoxoxo
+    desc: Follow me on twitter
+    share_url: http://twitter.com/share
+    share_title: ?text=
+    share_link: "&amp;url="
+
+#  - icon:	facebook
+#    url:	https://facebook.com/???
+#    desc: Connect with me facebook
+#    share_url: https://www.facebook.com/sharer.php
+#    share_title: ?t=
+#    share_link: "&amp;u="
+
+  - icon:	instagram
+    url:	https://www.instagram.com/premoxoxo/
+    desc:	Follow me on Instagram
+    share_url:
+    share_title:
+    share_link:
+
+#  - icon:	google-plus
+#    url:	https://google.com/???
+#    desc:	Add me on google+
+#    share_url:
+#    share_title:
+#    share_link:
+
+picture:
+  source: assets/images/_fullsize
+  output: generated
+  markup: picture
+  presets:
+    # Full width pictures
+    default:
+      ppi: [1, 1.5]
+      source_lrg:
+        media: "(min-width: 50em)"
+        width: 1000
+      source_med:
+        media: "(min-width: 30em)"
+        width: 700
+      source_default:
+        width: 600
+
+# Glynn settings
+ftp_host: 'base68.com'
+ftp_dir: '/'
+ftp_passive: false
+
+# optional
+ftp_port: 21                  # default 21
+ftp_username: 'f009917a'     # default read from stdin
+
+#gems
+gems: [jekyll-paginate]
+
+
