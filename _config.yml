@@ -1,6 +1,6 @@
 # Build settings
 #markdown: redcarpet
-#highlighter: pygments
+#highlighter: rogue
 plugins:
   - jemoji
   - picture_tag
@@ -22,7 +22,7 @@ author_image: "/assets/images/author.jpg"
 
 paginate:	5
 
-url: "http://blog.base68.com" # the base hostname & protocol for your site
+url: "https://premoxoxo.github.io/" # the base hostname & protocol for your site
 baseurl: ""
 #used to display twitter cards
 twitter_handle: '@dirkfabisch'
